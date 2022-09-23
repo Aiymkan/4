@@ -11,18 +11,13 @@ class ContactsPage extends Component {
     }
     addClick = () =>{
         console.log(this.state)
-        this.setState({input: ""})
     }
-    clearClick = () => {
-        this.setState({input: ""})
-    }
-
     render() {
         return (
             <form>
                 <input type="text" onChange={this.changeInput}/>
                 <button type="reset" onClick={this.addClick}>add</button>
-                <button type="reset" onClick={this.clearClick}>clear</button>
+                <button type="reset">clear</button>
 
             </form>
         );
